@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 Countdown</title>
+<link rel="stylesheet" media="screen" href="css/normalize.css" />
+<link rel="stylesheet" media="screen" href="css/style.css" />
+<link rel="stylesheet" media="screen" href="css/timer.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <!-- <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">StopWatch</a>
+    <a href="#contact">Contact</a>
+  </div> -->
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Timer')">Timer</button>
+    <button class="tablinks" onclick="openTab(event, 'StopWatch')">StopWatch</button>
+    <!-- <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
+    <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button> -->
+  </div>
+
+  <!-- Tab content -->
+  <div id="Timer" class="tabcontent">
+    <div class="container" style="text-align: center">
+      <h1>30-minute Timer</h1>
+      <!-- <div class="rotating progress" id="progress"></div>
+      </div> -->
+      <div class="circle-wrap">
+        <div class="circle">
+            <div class="mask full">
+              <div class="fill"></div>
+            </div>
+            <div class="mask half">
+              <div id="id-timer-circle" class="fill"></div>
+            </div>
+
+            <div id="id-time-now" class="inside-circle">
+              30:00
+            </div>
+        </div>
+      </div>
+      <button id="id-start-time-up" type="button" name="button">START</button>
+      <footer>
+        <p>
+          Copyright(C) fan-min.com All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="StopWatch" class="tabcontent">
+    <div class="container">
+      <h1>StopWatch</h1>
+      <div id="stopwatch"></div>
+      <button id="id-btn-start" class="btn-circle-border-simple" >START</button>
+      <button id="id-btn-stop"  class="btn-circle-border-simple inactive">STOP</button>
+      <button id="id-btn-resume"  class="btn-circle-border-simple inactive">RESUME</button>
+      <button id="id-btn-reset"  class="btn-circle-border-simple inactive">RESET</button>
+      <footer>
+        <p>
+          Copyright(C) fan-min.com All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+<script src="js/progressbar.js"></script>
+<!-- <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script> -->
+<script src="js/utility.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/stopwatch.js"></script>
+<script src="js/30_min_timer.js"></script>
+<script src="js/main.js"></script>
+</html>
